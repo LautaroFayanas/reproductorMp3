@@ -40,6 +40,7 @@ loadSongs();
 function playAudio(){
     audio.play();
     isPlaying = true;
+    imgReproductor.classList.add('imgReproductor-animation')
     
 }
 
@@ -47,6 +48,7 @@ function pauseAudio(){
     audio.pause();
 
     isPlaying = false;
+    imgReproductor.classList.remove('imgReproductor-animation')
     
 }
 
@@ -70,22 +72,10 @@ function previousSong(){
 
 playPauseBtn.addEventListener('click', function(){
     if(isPlaying){
-        pauseAudio();
-       
-        const parrafor = document.createElement('p')
-            parrafor.innerHTML= "detuviste"
-            playPauseBtn.appendChild(parrafor)
-
-        setTimeout(() => {
-            playPauseBtn.removeChild(parrafor)
-        }, 1500);
-      
+        pauseAudio(); 
         
     }else{
         playAudio();
-
-       
-        
     }
 },false)
 
