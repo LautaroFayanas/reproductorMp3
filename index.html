@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="musicReproductor">
+            <div class="reproductor">
+                <img src="/Img/brett-jordan-P_LEitbpCPg-unsplash.jpg" alt="imgReproductor" class="imgReproductor">
+                <h2 id="title">Song Name</h2>
+                <div class="sliderVolContainer">
+                    <img class="imgControl" src="/Img/alto-volumen.png" alt="">
+                    <input type="range" min="0" max="100" value="50" class="sliderVolIput">
+                    <img class="imgControl" src="/Img/simbolo-de-interfaz-de-subir-volumen.png" alt="">
+                </div>
+                <div class="controls">
+                    <button class="anterior" id="anterior"><img  class="imgControl"src="/Img/previous.png" alt="img1"></button>
+                    <button class="stop" id="stop"><img class="imgControl" src="/Img/play-and-pause-button.png" alt="img12"></button>
+                    <button class="siguiente" id="siguiente"><img class="imgControl" src="/Img/next.png" alt="img13"></button>
+                </div>
+            </div>
+            
+            <div class="playList">
+                <h2>Playlist</h2>
+                <ul class="songList">
+                    <li data-src="Music/beat.mp3" data-name="NameSongBeat" data-index="0"> <span>NameSongBeat</span> <span>2.22</span> </li>
+                    <li data-src="Music/beat.mp3" data-name="NameSongBeat1" data-index="1"> <span>NameSongBeat1</span> <span>2.22</span> </li>
+                    <li data-src="Music/beat.mp3" data-name="NameSongBeat2" data-index="2"> <span>NameSongBeat2</span> <span>2.22</span> </li>
+                    <li data-src="Music/beat.mp3" data-name="NameSongBeat3" data-index="3"> <span>NameSongBeat3</span> <span>2.22</span> </li>
+                    <li data-src="Music/beat.mp3" data-name="NameSongBeat4" data-index="4"> <span>NameSongBeat4</span> <span>2.22</span> </li>
+                    <li data-src="Music/beat.mp3" data-name="NameSongBeat5" data-index="5"> <span>NameSongBeat5</span> <span>2.22</span> </li>
+                    <li data-src="Music/beat.mp3" data-name="NameSongBeat6" data-index="6"> <span>NameSongBeat6</span> <span>2.22</span> </li>
+                    <li data-src="Music/beat.mp3" data-name="NameSongBeat7" data-index="7"> <span>NameSongBeat7</span> <span>2.22</span> </li>
+                    
+                </ul>
+                <audio src="" id="audio"></audio>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+<script src="/script.js"></script>
+</html>

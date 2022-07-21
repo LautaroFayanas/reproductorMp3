@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.musicReproductor{
+    display: flex;
+    flex-direction: row;
+    max-height: 450px;
+    width: 800px;
+
+}
+
+.reproductor{
+    background-color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
+.playList{
+    flex: 1;
+    background-color: black;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.imgReproductor{
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+
+}
+
+
+.reproductor h2{
+    color: orangered;
+    margin-bottom: 50px;
+}
+
+.sliderVolContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.sliderVolIput{
+    -webkit-appearance: none;
+    height: 10px;
+    background-color: black;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 1s;
+    transition: 0.2;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.sliderVolIput:hover{
+    opacity: 1;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controls > button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 20px;
+}
+
+
+.imgControl{
+    width: 20px;
+   
+}
+
+.playList {
+    color: white;
+}
+
+.playList h2{
+    margin-bottom: 20px;
+}
+
+.playList ul{
+    list-style-type: none;
+    flex-basis: 100%;
+    overflow-y: scroll;
+    pad: 0 5px; 
+}
+
+.playList ul li{
+    padding: 20px 20px 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.playList ul li.active{
+    font-weight: bold;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow:  0 0 10px white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: orange;
+}
